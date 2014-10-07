@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todolist Demo</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+ <div class="todolistWrapper">
+  <ul class="todolist">
+    <li>
+     <span class="title">Item1</span>
+     <ul class="sub-list"></ul>
+     <a href="" class="main-del">x</a>
+    </li>
+    <li>
+     <span class="title">Item2</span>
+     <ul class="sub-list"></ul>
+     <a href="" class="main-del">x</a>
+    </li>
+  </ul>
+  <div class="clear"></div>
+ </div>
+ <div class="addWrapper">
+   <input type="button" name="addBtn" value="Add"/>
+   <form class="hide">
+    <label>Enter a Todo and hit enter!</label>
+    <input type="text" />
+    <input type="button" value="Cancel" name="cancelBtn"/>
+   </form>
+ </div>
+ <div class="edit-overlay hide">
+  <div class="item-title">
+    <span>Item Title : </span> <input type="text" name="editTitle"/>
+  </div>
+  <!--<div class="item-contents">
+  	<span>Item Contents : </span> <textarea name="editContents"></textarea>
+  </div>-->
+  <div>
+    <ul class="subtodoList">
+     <li><input type="checkbox"/>Item 1<a></a></li>
+     <li><input type="checkbox"/>Item 2</li>
+     <li><input type="checkbox"/>Item 3</li>
+    </ul>
+    <div class="addsublist">
+      <label>Enter sublist item</label>
+      <input type="text" />
+      <input type="button" value="Add" name="addSublistBtn"/>
+      <input type="button" value="Cancel" name="cancelSublistBtn"/>
+      <input type="button" value="Delete" name="deleteSublistBtn"/>
+    </div>
+  </div>
+  <input type="button" name="saveBtn" value="Save"/>
+ </div>
+</body>
+<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
